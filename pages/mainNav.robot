@@ -13,6 +13,15 @@ Resource    ../resources/imports.robot
 Header Displays Correctly
     Element Text Should Be      ${dictMainNav}[header]      TO DO LIST
 
+Add Item Button Is Shown
+    Page Should Contain Element    ${dictMainNav}[addItem]
+
+To-Do Tasks Button Is Shown
+    Page Should Contain Element    ${dictMainNav}[toDoTasks]
+
+Completed Button Is Shown
+    Page Should Contain Element    ${dictMainNav}[completed]
+
 Click Add Item Button
     Click Element    ${dictMainNav}[addItem]
 
