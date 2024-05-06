@@ -18,7 +18,7 @@ Click Add Button
     SeleniumLibrary.Click Element    ${dictAddItem}[addButton]
 
 Input Text Field Is Cleared
-    ${inputText}=    Get Element Attribute    ${dictAddItem}[textField]    value
+    ${inputText}=    SeleniumLibrary.Get Element Attribute    ${dictAddItem}[textField]    value
     BuiltIn.Should Be Empty    ${inputText}
 
 Input Text Field Is Shown

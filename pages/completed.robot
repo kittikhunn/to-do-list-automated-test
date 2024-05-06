@@ -36,5 +36,5 @@ Click Delete Button
 
 Number of Completed Tasks Should Be ${value}
     ${value}=       Convert To Number    ${value}
-    ${numberOfIncompleteTasks}=     Get Element Count    ${dictCompleted}[listOfCompletedTasks]
+    ${numberOfIncompleteTasks}=     SeleniumLibrary.Get Element Count    ${dictCompleted}[listOfCompletedTasks]
     BuiltIn.Should Be Equal    ${value}    ${numberOfIncompleteTasks}
