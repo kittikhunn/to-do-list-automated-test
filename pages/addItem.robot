@@ -8,6 +8,8 @@ Resource  ../resources/imports.robot
 ...     addButton=xpath=//div[@id='add-item']//button
 
 *** Keywords ***
+Text Field Is Shown
+
 Input Text in Text Field
     [Arguments]     ${text}
     Input Text    ${dictAddItem}[textField]    ${text}
@@ -15,13 +17,13 @@ Input Text in Text Field
 Click Add Button
     Click Element    ${dictAddItem}[addButton]
 
-Input Text Field Should Be Cleared
+Input Text Field Is Cleared
     ${inputText}=    Get Element Attribute    ${dictAddItem}[textField]    value
     Should Be Empty    ${inputText}
 
-Input Text Field Should Be Shown
+Input Text Field Is Shown
     Page Should Contain Element    ${dictAddItem}[textField]
 
-Add Button Should Be Shown
+Add Button Is Shown
     Page Should Contain Element    ${dictAddItem}[addButton]
 
