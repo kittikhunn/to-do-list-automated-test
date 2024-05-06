@@ -42,7 +42,6 @@ TC01 - Default UI Elements Must Be Displayed Correctly
     mainNav.Click Completed Button
     completed.Number of Completed Tasks Should Be 0
 
-
 TC02 - User Can Add To-Do Task Successfully
     mainNav.Click Add Item Button
     addItem.Input Text in Text Field    text=Test1
